@@ -14,7 +14,3 @@ function controller($scope, adalAuthenticationService) {
 angular.module('app', [adalAngular])
   .config(config)
   .controller('ctrl', controller);
-
-angular.element(document).ready(function() {
-  angular.bootstrap(document, ['app']);
-});
