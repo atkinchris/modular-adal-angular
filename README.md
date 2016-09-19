@@ -1,5 +1,5 @@
 # modular-adal-angular
-This is a shim to bring easy modular support to AzureAD's [azure-activedirectory-library-for-js](https://github.com/AzureAD/azure-activedirectory-library-for-js).
+This is a shim to bring module support to AzureAD's [azure-activedirectory-library-for-js](https://github.com/AzureAD/azure-activedirectory-library-for-js) when used with Angular.
 
 ## Important Repository Change
 
@@ -12,9 +12,40 @@ This should allow easier updating of the underlying library, without rebases.
 It also removes a dependency on Webpack's [`expose-loader`](https://github.com/webpack/expose-loader),
 directly assigning the imported libary to `window.AuthenticationContext`.
 
-## Usage
 
-_Coming Soon_
+## Installation and Usage
+
+First, install the package into your application.
+
+```
+npm install --save modular-adal-angular
+```
+
+Then import it into your application's code.
+
+```js
+// traditional require style
+var adalAngular = require('modular-adal-angular');
+
+// ES6 fanciness
+import adalAngular from 'modular-adal-angular';
+```
+
+Finally, add it as a module dependency on your Angular application.
+
+```js
+angular.module('myApp', [adalAngular]);
+```
+
+
+## If you're not using Angular
+
+If you're only using the `AuthenticationContext` (`adal.js`) part of the library, and do not need the Angular module (`adal-angular.js`), use the official [`adal-angular`](https://www.npmjs.com/package/adal-angular) package. You can simply import it and assign it to `window.AuthenticationContext`, and avoid the proxy part of this shim.
+
+```js
+window.AuthenticationContext = require('adal-angular');
+```
+
 
 ## Why do I need this, and why is `AuthenticationContext` on my `window` object?
 
