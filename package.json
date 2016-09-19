@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "description": "Module shim for Azure AD's azure-activedirectory-library-for-js",
   "scripts": {
-    "test": "webpack-dev-server -d --content-base test"
+    "test": "webpack-dev-server --config ./test/webpack.config.js --content-base test"
   },
   "main": "./adal-angular.js",
   "keywords": [
@@ -16,11 +16,7 @@
   "author": "Chris Atkin <atkinchris@gmail.com>",
   "license": "Apache 2.0",
   "dependencies": {
-    "adal-angular": "^1.0.12",
-    "imports-loader": "^0.6.5"
-  },
-  "peerDependencies": {
-    "imports-loader": "^0.6.5"
+    "adal-angular": "^1.0.12"
   },
   "devDependencies": {
     "angular": "^1.5.8",
