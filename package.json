@@ -1,0 +1,22 @@
+{
+  "name": "modular-adal-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack ./test/app.js ./test/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adal-angular": "^1.0.12"
+  },
+  "peerDependencies": {
+    "imports-loader": "^0.6.5"
+  },
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "webpack": "^1.13.2"
+  }
+}
