@@ -1,13 +1,10 @@
 {
   "name": "modular-adal-angular",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Module shim for Azure AD's azure-activedirectory-library-for-js",
   "main": "adal-angular.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "webpack-dev-server --config ./test/webpack.config.js --content-base test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -29,10 +26,5 @@
   "homepage": "https://github.com/atkinchris/modular-adal-angular#readme",
   "dependencies": {
     "adal-angular": "^1.0.12"
-  },
-  "devDependencies": {
-    "angular": "^1.5.8",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
   }
 }

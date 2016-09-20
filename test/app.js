@@ -1,5 +1,5 @@
 var angular = require('angular');
-var adalAngular = require('../adal-angular');
+var adalAngular = require('modular-adal-angular');
 
 function config(adalAuthenticationServiceProvider, $httpProvider) {
   adalAuthenticationServiceProvider.init({ clientId: 'example-client-id' }, $httpProvider);
