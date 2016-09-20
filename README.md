@@ -15,7 +15,7 @@ directly assigning the imported libary to `window.AuthenticationContext`. This s
 
 ## Installation and Usage
 
-First, install the package into your application.
+First, install the package from [npm](https://www.npmjs.com/package/modular-adal-angular) into your application.
 
 ```
 npm install --save modular-adal-angular
