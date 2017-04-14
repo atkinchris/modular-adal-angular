@@ -11,11 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "adal-angular": "^1.0.14",
     "angular": "^1.5.8",
-    "modular-adal-angular": "^1.0.2"
+    "modular-adal-angular": "file:.."
   },
   "devDependencies": {
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
   }
 }

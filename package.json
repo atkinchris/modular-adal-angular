@@ -1,6 +1,6 @@
 {
   "name": "modular-adal-angular",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Module shim for Azure AD's azure-activedirectory-library-for-js",
   "main": "adal-angular.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "url": "https://github.com/atkinchris/modular-adal-angular/issues"
   },
   "homepage": "https://github.com/atkinchris/modular-adal-angular#readme",
-  "dependencies": {
-    "adal-angular": "^1.0.12"
+  "peerDependencies": {
+    "adal-angular": "1.x"
   }
 }
