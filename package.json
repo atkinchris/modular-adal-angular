@@ -1,6 +1,6 @@
 {
   "name": "modular-adal-angular",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Module shim for Azure AD's azure-activedirectory-library-for-js",
   "main": "adal-angular.js",
   "scripts": {
